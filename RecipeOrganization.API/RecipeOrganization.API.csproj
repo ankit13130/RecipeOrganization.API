@@ -8,12 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configurations\" />
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\RecipeOrganization.Core.Contract\RecipeOrganization.Core.Contract.csproj" />
+    <ProjectReference Include="..\RecipeOrganization.Core.Domain\RecipeOrganization.Core.Domain.csproj" />
+    <ProjectReference Include="..\RecipeOrganization.Core.Services\RecipeOrganization.Core.Services.csproj" />
+    <ProjectReference Include="..\RecipeOrganization.Infrastructure.Contract\RecipeOrganization.Infrastructure.Contract.csproj" />
+    <ProjectReference Include="..\RecipeOrganization.Infrastructure.Domain\RecipeOrganization.Infrastructure.Domain.csproj" />
+    <ProjectReference Include="..\RecipeOrganization.Infrastructure.Repositories\RecipeOrganization.Infrastructure.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

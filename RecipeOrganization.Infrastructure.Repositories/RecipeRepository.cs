@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeOrganization.Infrastructure.Contract
+namespace RecipeOrganization.Infrastructure.Repositories
 {
-    internal interface ICategory
+    internal class RecipeRepository
     {
     }
 }

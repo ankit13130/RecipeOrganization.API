@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RecipeOrganization.Core.Domain\RecipeOrganization.Core.Domain.csproj" />
+    <ProjectReference Include="..\RecipeOrganization.Infrastructure.Domain\RecipeOrganization.Infrastructure.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -9,7 +9,6 @@ public class Recipe : Audit
     public string Ingredients { get; set;}
     public string Instructions { get; set;}
     public string RecipeImage { get; set;}
-    public decimal RecipeBudget { get; set;}
     public long UserId { get; set;}
     public long CategoryId { get; set;}
     public User User { get; set;}

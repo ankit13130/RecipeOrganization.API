@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace RecipeOrganization.Infrastructure.Domain.Entities;
 
-namespace RecipeOrganization.Infrastructure.Domain.Entities
+public class Review : Audit
 {
-    internal class Review
-    {
-    }
+    public long ReviewId { get; set; }
+    public string Comment { get; set;}
+    public decimal Rating { get; set;}
+    public long UserId { get; set; }
+    public long RecipeId { get; set; }
 }
